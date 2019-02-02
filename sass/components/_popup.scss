@@ -1,4 +1,17 @@
 .popup {
 	height: 100vh;
-	background-color: $color-grey-dark-3;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba($color-black, 0.8);
+	z-index: 9999;
+
+	&__content {
+		@include centerElement;
+		background-color: $color-white;
+		width: 75%;
+		height: 50rem;
+		box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+	}
 }
